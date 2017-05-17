@@ -1,0 +1,40 @@
+{
+  "name": "server of gp",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "description": "The server of my graduation project.",
+  "private": true,
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "server",
+    "gp",
+    "node"
+  ],
+  "dependencies": {
+    "express": "4.15.2",
+    "babel-preset-es2015": "^6.22.0",
+    "body-parser": "^1.16.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0"
+  },
+  "author": {
+    "name": "Simon Zhu",
+    "email": "mengsir10@163.com"
+  },
+  "devDependencies": {
+    "body-parser": "^1.17.1",
+    "ejs": "^2.5.6",
+    "favicon": "^0.0.2",
+    "gulp": "^3.9.1",
+    "morgan": "^1.8.1",
+    "sqlite3": "^3.1.8",
+    "ws": "^2.2.2"
+  }
+}
