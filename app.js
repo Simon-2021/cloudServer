@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use('/api',index);
 
-app.listen(3000,'119.23.254.236', function(){
+app.listen(3000,'172.18.77.43', function(){
     console.log("The server of gp is created at the port of 3000.");
 });
 
