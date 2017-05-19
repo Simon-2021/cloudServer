@@ -4,7 +4,7 @@ const sqlite3 = require('sqlite3').verbose();
 
 const router = express.Router();
 
-// const aimHost ='172.18.77.43';
+const aimHost ='172.18.77.43';
 
 let db = new sqlite3.Database('server.sqlite3');
 let machines = [];
@@ -172,7 +172,7 @@ router.get('/managerMachines', (req, res) => {
 
 const listServer = new WebSocketServer({           //与客户端通信，展示机床列表
     perMessageDeflate: false,
-    // host: aimHost,
+    host: aimHost,
     port: 3010
 });
 
@@ -213,7 +213,7 @@ listServer.on('connection', (ws) => {
 
 const detailServer = new WebSocketServer({         //与客户端通信，展示机床详细信息
     perMessageDeflate: false,
-    // host: aimHost,
+    host: aimHost,
     port: 3020
 });
 
@@ -306,7 +306,7 @@ detailServer.on('connection', (ws) => {
 
 const updateServer = new WebSocketServer({         //与上位机通信，获取状态和参数信息
     perMessageDeflate: false,
-    // host: aimHost,
+    host: aimHost,
     port:4000
 });
 updateServer.on('connection', (ws) => {
