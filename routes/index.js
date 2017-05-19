@@ -4,7 +4,7 @@ const sqlite3 = require('sqlite3').verbose();
 
 const router = express.Router();
 
-const aimHost ='172.18.77.43';
+const aimHost ='119.23.254.236';
 
 let db = new sqlite3.Database('server.sqlite3');
 let machines = [];
